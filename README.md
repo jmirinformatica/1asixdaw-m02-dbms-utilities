@@ -6,8 +6,8 @@ DBMS utilities
 Command options:
 
 ```console
-foo@bar:~$ ./create-mysql-users.py --help
-usage: create-mysql-users.py [--help] [-fr [FIRSTROW]] [-fc [FIRSTCOLUMN]]
+foo@bar:~$ ./mysql_create_users.py --help
+usage: mysql_create_users.py [--help] [-fr [FIRSTROW]] [-fc [FIRSTCOLUMN]]
                                [-d] [-c] [-g] [-e] [-h [HOST]] [--port [PORT]]
                                [-u [USER]] [-p]
                                csvfile
@@ -37,14 +37,14 @@ Example 1:
 Generate and save SQL as a file
 
 ```console
-foo@bar:~$ ./create-mysql-users.py -fc 5 -d -c -g db-users.csv > db-users.sql
+foo@bar:~$ ./mysql_create_users.py -fc 5 -d -c -g db-users.csv > db-users.sql
 ```
 
 Example 2:
 Generate and execute SQL on server
 
 ```console
-foo@bar:~$ ./create-mysql-users.py -fc 5 -d -c -g db-users.csv -e -h mydbhost --port=3306 -u mydbuser -p
+foo@bar:~$ ./mysql_create_users.py -fc 5 -d -c -g db-users.csv -e -h mydbhost --port=3306 -u mydbuser -p
 ```
 
 ## mysql_install_phpmyadmin.sh
