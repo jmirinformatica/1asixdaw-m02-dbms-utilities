@@ -1,7 +1,7 @@
 # 1asixdawm02-dbms-utilities
 DBMS utilities
 
-## create-mysql-users.py
+## mysql_create_users.py
 
 Command options:
 
@@ -46,3 +46,15 @@ Generate and execute SQL on server
 ```console
 foo@bar:~$ ./create-mysql-users.py -fc 5 -d -c -g db-users.csv -e -h mydbhost --port=3306 -u mydbuser -p
 ```
+
+## mysql_install_phpmyadmin.sh
+
+Install `phpmyadmin` package and configure `apache2` server.
+
+## mysql_upgrade_8.sh
+
+Migrate `MySQL 5.7.x` to `MySQL 8.0.x` including previous backup.
+
+## postgresql_install_pgadmin.sh
+
+Install `pgadmin` and configure web server.
