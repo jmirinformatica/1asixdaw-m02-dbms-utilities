@@ -25,7 +25,7 @@ EOF
 INSTALL  = false
 FILE     =
 GROUP    = "students"
-PASSWORD = "holaHT1357*"
+PASSWORD = "holaHT1357**"
 
 while getopts "hif:p:" OPTION
 do
