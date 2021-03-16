@@ -58,3 +58,36 @@ Migrate `MySQL 5.7.x` to `MySQL 8.0.x` including previous backup.
 ## postgresql_install_pgadmin.sh
 
 Install `pgadmin` and configure web server.
+
+## system_users.sh
+
+Create system users in your server.
+
+```console
+arguments:
+   -i       Install password library (required once)
+   -f       Users list file (mandatory)
+   -g       Users group (optional)
+   -p       Initial password (optional)
+   -h       Shows script information
+ ```
+Example 1:
+Install passwords library.
+
+```console
+foo@bar:~$ ./system_users.sh -i
+```
+
+Example 2:
+Create users using default group (```"students"```) and default first password (```"holaHT1357**"```).
+
+```console
+foo@bar:~$ ./system_users.sh -f users.txt
+```
+
+Example 3:
+Create users with custom initial password and custom group.
+
+```console
+foo@bar:~$ ./system_users.sh -f users.txt -p Bye2021_$LS -g teachers
+```
